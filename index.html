@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VELOURA Beauty Atelier | Bridal, Hair &amp; Skin, Bandra West</title>
+  <meta name="description" content="A private beauty atelier in Bandra West. Bridal artistry, couture colour and skin rituals, by appointment on WhatsApp. First visit, 20% off." />
+  <meta name="theme-color" content="#1a0e13" />
+  <!-- Social sharing card. After deploying, replace veloura.netlify.app
+       with the site's real domain in og:url, og:image and twitter:image —
+       scrapers need absolute URLs. -->
+  <meta property="og:site_name" content="VELOURA Beauty Atelier" />
+  <meta property="og:title" content="VELOURA — The Beauty Atelier" />
+  <meta property="og:description" content="Bridal artistry, couture colour and skin rituals in Bandra West, by appointment on WhatsApp. First visit, 20% off." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://veloura.netlify.app/" />
+  <meta property="og:image" content="https://veloura.netlify.app/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="VELOURA Beauty Atelier — You, in better light. A private atelier for hair, skin and bridal artistry in Bandra West." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VELOURA — The Beauty Atelier" />
+  <meta name="twitter:description" content="Bridal artistry, couture colour and skin rituals in Bandra West, by appointment on WhatsApp. First visit, 20% off." />
+  <meta name="twitter:image" content="https://veloura.netlify.app/og.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.6C13 8 16 11 22.4 12C16 13 13 16 12 22.4C11 16 8 13 1.6 12C8 11 11 8 12 1.6Z' fill='%23CBA35C'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..650,0..100,0..1;1,9..144,300..650,0..100,0..1&family=Jost:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.css" integrity="sha384-gvLq/iOMNnPchdosgVym5huSVkKipHCQaqSw2Eg0V52Mzmlf169ZOsXcNc2cNu8x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <noscript>
+    <style>
+      body.is-loading { overflow: auto; }
+      .preloader { display: none; }
+      .ribbon-path { visibility: visible; }
+    </style>
+  </noscript>
+</head>
+
+<body class="is-loading">
+
+  <!-- reusable inline icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-sparkle" viewBox="0 0 24 24">
+        <path d="M12 1.6C13 8 16 11 22.4 12C16 13 13 16 12 22.4C11 16 8 13 1.6 12C8 11 11 8 12 1.6Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 20 20">
+        <path d="M10 1.7L12.2 7.5L18.4 7.8L13.5 11.6L15.2 17.6L10 14.2L4.8 17.6L6.5 11.6L1.6 7.8L7.8 7.5Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+      </symbol>
+      <symbol id="i-lotus" viewBox="0 0 100 60">
+        <path d="M50 12C56 20 58.5 32 50 44C41.5 32 44 20 50 12ZM50 44C40 41 32.5 33 31.5 20C39 26 46.5 34 50 44ZM50 44C60 41 67.5 33 68.5 20C61 26 53.5 34 50 44ZM46 47C32 49 17 44 9.5 32C7.8 28.6 10.8 26 13.6 28C15.8 29.6 15 32.4 12.4 32.2M54 47C68 49 83 44 90.5 32C92.2 28.6 89.2 26 86.4 28C84.2 29.6 85 32.4 87.6 32.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </symbol>
+      <symbol id="i-corner" viewBox="0 0 80 80">
+        <path d="M75.8 12.4C78.8 9.4 76.8 5.2 72.6 5.7C46.2 5.2 20.9 8.7 11.4 19.7C7.4 24.3 6 32 6 45.8C6 53.9 6.1 61.9 6.1 70C6.2 74.8 10.6 76.6 13 73.4M62 13.5C42.5 13 25.4 16.1 17.6 24.6C14 28.6 13 34.4 13 43.6C13 49.8 13 56 13 62.2M27.5 21C28.4 25 30.1 26.6 33.8 27.5C30.1 28.4 28.4 30 27.5 34C26.6 30 24.9 28.4 21.2 27.5C24.9 26.6 26.6 25 27.5 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div>
+      <svg viewBox="0 0 120 120" fill="none">
+        <path class="preloader-mono" d="M16 34C20.5 23.5 28.5 21.5 32.5 29.5C41.5 51.5 50.5 73.5 58 92.5C59 95 61.2 95.2 62.2 92.7C70.8 71 79 49.5 86.8 28.5C89.8 20.5 97.5 15.5 104.2 19.8C110.8 24 110 33 103 35.2C97.8 36.8 94.2 32.2 97.2 27.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
+      </svg>
+      <p class="preloader-word">The Beauty Atelier</p>
+    </div>
+  </div>
+
+  <!-- navigation -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="VELOURA — home">
+        <svg class="brand-mark" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+          <path d="M16 34C20.5 23.5 28.5 21.5 32.5 29.5C41.5 51.5 50.5 73.5 58 92.5C59 95 61.2 95.2 62.2 92.7C70.8 71 79 49.5 86.8 28.5C89.8 20.5 97.5 15.5 104.2 19.8C110.8 24 110 33 103 35.2C97.8 36.8 94.2 32.2 97.2 27.8" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        VELOURA <small>Beauty Atelier</small>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">The Atelier</a>
+        <a href="#services">Menu</a>
+        <a href="#bridal">Bridal</a>
+        <a href="#work">The Work</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary nav-cta" data-wa="general" href="https://wa.me/918308936941">
+        <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+        Book now
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- full-screen mobile menu -->
+  <div class="menu-overlay" id="menu">
+    <nav aria-label="Mobile">
+      <a href="#about"><i>01</i> The Atelier</a>
+      <a href="#services"><i>02</i> Menu &amp; Prices</a>
+      <a href="#bridal"><i>03</i> Bridal</a>
+      <a href="#work"><i>04</i> The Work</a>
+      <a href="#faq"><i>05</i> FAQ</a>
+    </nav>
+    <div class="menu-foot">
+      <span>Tue–Fri 10–8 · Weekends 9–9 · Mon closed</span>
+      <span>41 Linking Road, Bandra West, Mumbai</span>
+      <a class="btn btn--primary" data-wa="general" href="https://wa.me/918308936941">
+        <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+        Book on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- signature ribbon (kajal stroke), drawn by scroll -->
+  <div class="ribbon-layer" aria-hidden="true">
+    <svg class="ribbon-desktop" viewBox="0 0 1000 8000" preserveAspectRatio="xMidYMin slice" fill="none">
+      <path class="ribbon-path" d="M500 -40C500 240 262 430 258 706S742 1012 776 1330S372 1738 302 2046S688 2372 742 2704S560 3060 540 3330S220 3690 262 4030S806 4400 792 4730S334 5120 296 5450S742 5790 764 6110S372 6520 316 6850S816 7230 788 7560S492 7880 470 8120" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1"/>
+    </svg>
+    <svg class="ribbon-mobile" viewBox="0 0 400 8000" preserveAspectRatio="xMidYMin slice" fill="none">
+      <path class="ribbon-path" d="M200 -40C200 220 116 400 112 660S294 940 302 1230S128 1560 116 1860S286 2160 296 2450S196 2760 188 3010S96 3320 108 3620S308 3930 300 4230S120 4560 110 4860S292 5170 300 5460S150 5790 132 6090S312 6420 296 6730S140 7060 122 7360S288 7700 250 8060" stroke="currentColor" stroke-width="2" pathLength="1" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" data-theme="dark" aria-label="Welcome">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> The Beauty Atelier · Bandra West</p>
+          <div class="hero-title-wrap">
+            <h1 class="hero-title display" data-reveal="mask">You, in <em>better&nbsp;light</em>.</h1>
+            <svg class="underline-swash" viewBox="0 0 300 20" fill="none" aria-hidden="true">
+              <path class="swash-draw" d="M4 14.5C48 7.6 108 5.6 168 8.2C218 10.4 258 13 288 8.6C291.4 8.1 294.2 7.2 296.5 5.8" stroke="currentColor" stroke-width="3" stroke-linecap="round" pathLength="1"/>
+            </svg>
+          </div>
+          <p class="lede" data-reveal="up" data-reveal-delay="0.2">A private atelier for hair, skin and bridal artistry. Four chairs, no queue, by appointment only.</p>
+          <div class="hero-actions" data-reveal="up" data-reveal-delay="0.35">
+            <a class="btn btn--primary" data-wa="general" href="https://wa.me/918308936941">
+              <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+              Book on WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#services">See the menu</a>
+          </div>
+        </div>
+        <div class="hero-media" data-reveal="fade" data-reveal-delay="0.3">
+          <figure class="arch arch--ornate">
+            <img src="https://images.unsplash.com/photo-1759354192456-71975b190c51?q=80&w=2000&auto=format&fit=crop" alt="Editorial beauty portrait of a woman with dark curls and sculpted makeup, eyes lowered against a moody dark backdrop" fetchpriority="high" />
+          </figure>
+          <a class="badge-spin" data-wa="general" href="https://wa.me/918308936941" aria-label="Book on WhatsApp">
+            <svg viewBox="0 0 160 160" aria-hidden="true">
+              <g class="badge-ring">
+                <path id="vlr-badge-arc" d="M80 16a64 64 0 0 1 0 128a64 64 0 0 1 0 -128" fill="none"/>
+                <text font-size="12.5" letter-spacing="2.4" fill="currentColor"><textPath href="#vlr-badge-arc">BOOK ON WHATSAPP • VELOURA ATELIER •</textPath></text>
+              </g>
+              <path d="M80 67C81.6 75.4 84.6 78.4 93 80C84.6 81.6 81.6 84.6 80 93C78.4 84.6 75.4 81.6 67 80C75.4 78.4 78.4 75.4 80 67Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-half">
+          <span class="marquee-item">Bridal Artistry <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Couture Colour <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Hair Rituals <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Skin Therapies <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Editorial Makeup <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Hands &amp; Feet <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">By Appointment <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+        </span>
+        <span class="marquee-half">
+          <span class="marquee-item">Bridal Artistry <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Couture Colour <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Hair Rituals <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Skin Therapies <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Editorial Makeup <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">Hands &amp; Feet <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+          <span class="marquee-item">By Appointment <svg class="sparkle"><use href="#i-sparkle"/></svg></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about" data-theme="light">
+      <div class="container about-grid">
+        <div class="about-media">
+          <svg class="lotus-divider" aria-hidden="true"><use href="#i-lotus"/></svg>
+          <figure class="arch" data-reveal="fade">
+            <img src="https://images.unsplash.com/photo-1773904215697-e6c21fc27ac2?q=80&w=1400&auto=format&fit=crop" alt="Dimly lit luxury salon interior with leather styling chairs, basins and warm accent lighting" loading="lazy" />
+          </figure>
+          <figure class="arch arch--ornate" data-reveal="fade" data-reveal-delay="0.15">
+            <img src="https://images.unsplash.com/photo-1633681122703-3ce20f1e978d?q=80&w=1400&auto=format&fit=crop" alt="Elegant salon suite with a gilt-framed mirror, styling chairs and soft glowing lights" loading="lazy" />
+          </figure>
+        </div>
+        <div class="about-body">
+          <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> The Atelier</p>
+          <h2 class="display" data-reveal="mask">Quiet rooms, <em>careful</em> hands.</h2>
+          <p data-reveal="up">VELOURA is a four-chair atelier, not a floor of stations. Your appointment begins with a conversation and ends when the work is right, not when the clock says so.</p>
+          <p data-reveal="up" data-reveal-delay="0.1">We keep our bookings few and our standards fixed. Your colourist mixes for your skin, your stylist cuts for your week, and nobody sells you what you don't need.</p>
+          <div class="stats" data-reveal="up" data-reveal-delay="0.2">
+            <div class="stat"><b>12</b><span>Years of practice</span></div>
+            <div class="stat"><b>400+</b><span>Brides styled</span></div>
+            <div class="stat"><b>4.9</b><span>Google rating</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES / PRICE MENU ================= -->
+    <section class="services" id="services" data-theme="light">
+      <div class="container">
+        <div class="services-head">
+          <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Services</p>
+          <h2 class="display" data-reveal="mask">The menu, <em>plainly</em> priced.</h2>
+          <p class="services-note" data-reveal="up">Prices are for mid-length hair and begin where listed. Every service opens with a short consult, on the house.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Service categories">
+          <button class="menu-tab" role="tab" id="tab-hair" aria-controls="panel-hair" aria-selected="true" tabindex="0">Hair</button>
+          <button class="menu-tab" role="tab" id="tab-makeup" aria-controls="panel-makeup" aria-selected="false" tabindex="-1">Makeup</button>
+          <button class="menu-tab" role="tab" id="tab-skin" aria-controls="panel-skin" aria-selected="false" tabindex="-1">Skin &amp; Glow</button>
+          <button class="menu-tab" role="tab" id="tab-nails" aria-controls="panel-nails" aria-selected="false" tabindex="-1">Hands &amp; Feet</button>
+        </div>
+
+        <div class="menu-panel is-active" id="panel-hair" role="tabpanel" aria-labelledby="tab-hair">
+          <div class="menu-row">
+            <div><span class="menu-item-name">Sculpt Cut &amp; Finish</span><span class="menu-item-desc">Consultation, precision cut, bespoke blow-dry</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹2,400</span>
+            <a class="menu-book" data-wa="service" data-service="the Sculpt Cut &amp; Finish" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Signature Blowout</span><span class="menu-item-desc">Wash, oil-serum finish, brushwork that lasts</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹1,500</span>
+            <a class="menu-book" data-wa="service" data-service="the Signature Blowout" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Couture Global Colour</span><span class="menu-item-desc">Ammonia-free colour, mixed for your skin</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹6,500</span>
+            <a class="menu-book" data-wa="service" data-service="Couture Global Colour" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Lived-in Balayage</span><span class="menu-item-desc">Hand-painted dimension, soft regrowth lines</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹11,000</span>
+            <a class="menu-book" data-wa="service" data-service="a Lived-in Balayage" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Keratin Smoothening</span><span class="menu-item-desc">Frizz control that survives the monsoon</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹9,000</span>
+            <a class="menu-book" data-wa="service" data-service="Keratin Smoothening" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Rituel Hair Spa</span><span class="menu-item-desc">Scalp massage, steam, deep-repair masque</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹2,800</span>
+            <a class="menu-book" data-wa="service" data-service="the Rituel Hair Spa" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-makeup" role="tabpanel" aria-labelledby="tab-makeup">
+          <div class="menu-row">
+            <div><span class="menu-item-name">Soirée Makeup</span><span class="menu-item-desc">Evening-proof base, done in ninety minutes</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹7,500</span>
+            <a class="menu-book" data-wa="service" data-service="Soirée Makeup" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Cocktail &amp; Sangeet</span><span class="menu-item-desc">Camera-ready, built to outlast the dancing</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹9,500</span>
+            <a class="menu-book" data-wa="service" data-service="Cocktail &amp; Sangeet makeup" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Engagement Makeup</span><span class="menu-item-desc">Softer than bridal, stronger than party</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹12,500</span>
+            <a class="menu-book" data-wa="service" data-service="Engagement Makeup" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Airbrush Makeup</span><span class="menu-item-desc">Featherweight, seamless, sixteen hours of wear</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹15,000</span>
+            <a class="menu-book" data-wa="service" data-service="Airbrush Makeup" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Editorial &amp; Shoot</span><span class="menu-item-desc">For lookbooks, portfolios and fine portraiture</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹10,000</span>
+            <a class="menu-book" data-wa="service" data-service="Editorial &amp; Shoot makeup" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">The Private Lesson</span><span class="menu-item-desc">Your kit, your face, two hours</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹8,000</span>
+            <a class="menu-book" data-wa="service" data-service="the Private Lesson" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-skin" role="tabpanel" aria-labelledby="tab-skin">
+          <div class="menu-row">
+            <div><span class="menu-item-name">The Veloura Facial</span><span class="menu-item-desc">Double cleanse, lifting massage, cold therapy</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹4,800</span>
+            <a class="menu-book" data-wa="service" data-service="the Veloura Facial" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">HydraFacial</span><span class="menu-item-desc">Medical-grade resurfacing with instant, visible clarity</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹7,500</span>
+            <a class="menu-book" data-wa="service" data-service="a HydraFacial" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Pre-Bridal Glow Plan</span><span class="menu-item-desc">Six weeks, four sittings, one glow</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹18,000</span>
+            <a class="menu-book" data-wa="service" data-service="the Pre-Bridal Glow Plan" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Deep-Cleanse Ritual</span><span class="menu-item-desc">The thirty-minute reset between facials</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹2,500</span>
+            <a class="menu-book" data-wa="service" data-service="the Deep-Cleanse Ritual" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">LED Light Therapy</span><span class="menu-item-desc">Calms breakouts, quickens repair, zero downtime</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹3,500</span>
+            <a class="menu-book" data-wa="service" data-service="LED Light Therapy" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Back &amp; Décolleté Polish</span><span class="menu-item-desc">For backless blouses and low necklines</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹3,200</span>
+            <a class="menu-book" data-wa="service" data-service="the Back &amp; Décolleté Polish" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-nails" role="tabpanel" aria-labelledby="tab-nails">
+          <div class="menu-row">
+            <div><span class="menu-item-name">Classic Manicure</span><span class="menu-item-desc">Tidy, buffed, finished in breathable polish</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹1,200</span>
+            <a class="menu-book" data-wa="service" data-service="a Classic Manicure" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Classic Pedicure</span><span class="menu-item-desc">Soak, scrub, massage, an immaculate finish</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹1,500</span>
+            <a class="menu-book" data-wa="service" data-service="a Classic Pedicure" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Gel Overlay</span><span class="menu-item-desc">Three weeks of chip-free colour</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹2,200</span>
+            <a class="menu-book" data-wa="service" data-service="a Gel Overlay" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">The Heel Ritual</span><span class="menu-item-desc">Callus care, paraffin wrap, peppermint balm</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price">₹2,800</span>
+            <a class="menu-book" data-wa="service" data-service="the Heel Ritual" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+          <div class="menu-row">
+            <div><span class="menu-item-name">Bridal Nail Extensions</span><span class="menu-item-desc">Sculpted length, matched to your outfits</span></div>
+            <span class="menu-leader"></span>
+            <span class="menu-price"><small>from</small>₹3,800</span>
+            <a class="menu-book" data-wa="service" data-service="Bridal Nail Extensions" href="https://wa.me/918308936941">Book ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BRIDAL ================= -->
+    <section class="bridal" id="bridal" data-theme="dark">
+      <div class="container">
+        <div class="bridal-head">
+          <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Bridal</p>
+          <h2 class="display" data-reveal="mask">Your day, <em>composed</em>.</h2>
+          <p class="lede" data-reveal="up">One artist, one bride, one unhurried morning. We rehearse everything at your trial so the wedding day holds no surprises.</p>
+        </div>
+        <div class="packages">
+          <article class="package" data-reveal="up">
+            <h3>The Muhurat</h3>
+            <p class="package-tagline">One event, done completely.</p>
+            <p class="package-price"><small>Complete</small>₹32,000</p>
+            <ul>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> HD bridal makeup and hairstyling</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Saree or dupatta draping</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Individual lashes and a touch-up kit</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Skin-prep consult a week prior</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Artist on hand until you leave for the venue</li>
+            </ul>
+            <a class="btn btn--ghost" data-wa="bridal" data-service="The Muhurat package" href="https://wa.me/918308936941">Enquire</a>
+          </article>
+          <article class="package package--featured" data-reveal="up" data-reveal-delay="0.12">
+            <span class="package-flag">Most chosen</span>
+            <h3>The Veloura Bride</h3>
+            <p class="package-tagline">The wedding day, rehearsed first.</p>
+            <p class="package-price"><small>Trial included</small>₹48,000</p>
+            <ul>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Full bridal trial, two weeks ahead</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Airbrush or HD makeup, your call</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Hairstyling with fresh florals set in</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Draping, lashes and a touch-up kit</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Makeup for your mother or sister</li>
+            </ul>
+            <a class="btn btn--foil" data-wa="bridal" data-service="The Veloura Bride package" href="https://wa.me/918308936941">
+              <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+              Enquire
+            </a>
+          </article>
+          <article class="package" data-reveal="up" data-reveal-delay="0.24">
+            <h3>The Trousseau</h3>
+            <p class="package-tagline">Mehndi, sangeet and the wedding day.</p>
+            <p class="package-price"><small>Three events</small>₹65,000</p>
+            <ul>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Three complete looks across three events</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Bridal trial plus a skin-prep plan</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Airbrush makeup for the wedding day</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Hairstyling, draping and lashes throughout</li>
+              <li><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> A priority WhatsApp line to your artist</li>
+            </ul>
+            <a class="btn btn--ghost" data-wa="bridal" data-service="The Trousseau package" href="https://wa.me/918308936941">Enquire</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery" id="work" data-theme="dark">
+      <div class="container gallery-head">
+        <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> The Work</p>
+        <h2 class="display" data-reveal="mask">Proof, not <em>promises</em>.</h2>
+      </div>
+      <div class="gallery-track-wrap">
+        <div class="gallery-track">
+          <figure class="gallery-card">
+            <div class="arch"><img src="https://images.unsplash.com/photo-1573308545653-7226bd37ee9f?q=80&w=1400&auto=format&fit=crop" alt="Editorial beauty close-up of a woman wearing gold lipstick with amber and smoke eyeshadow" loading="lazy" /></div>
+            <figcaption>Makeup <i>Gilded eye</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="frame"><img src="https://images.unsplash.com/photo-1610173827043-9db50e0d8ef9?q=80&w=1400&auto=format&fit=crop" alt="Indian bride in a red and gold dupatta with traditional bridal makeup and jewellery" loading="lazy" /></div>
+            <figcaption>Bridal <i>The muhurat morning</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="arch"><img src="https://images.unsplash.com/photo-1633681121751-e4a0392602b8?q=80&w=1400&auto=format&fit=crop" alt="Quiet corner of an elegant salon with twin chairs facing an ornate mirror" loading="lazy" /></div>
+            <figcaption>Atelier <i>Chair two of four</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="frame"><img src="https://images.unsplash.com/photo-1634588946180-0b5e2518655b?q=80&w=1400&auto=format&fit=crop" alt="Portrait of a woman in a gold statement necklace with luminous editorial makeup" loading="lazy" /></div>
+            <figcaption>Makeup <i>Soirée, set</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="arch"><img src="https://images.unsplash.com/photo-1730003873829-09b4b16444c1?q=80&w=1400&auto=format&fit=crop" alt="Close-up of a bride's hands decorated with detailed mehndi patterns" loading="lazy" /></div>
+            <figcaption>Bridal <i>Mehndi, mapped</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="frame"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1400&auto=format&fit=crop" alt="Close-up of professional makeup brushes with soft pigment-dusted bristles" loading="lazy" /></div>
+            <figcaption>Craft <i>Tools of it</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="arch"><img src="https://images.unsplash.com/photo-1600685890506-593fdf55949b?q=80&w=1400&auto=format&fit=crop" alt="Regal portrait of a woman crowned in gold bridal jewellery and traditional finery" loading="lazy" /></div>
+            <figcaption>Bridal <i>Crowned in gold</i></figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <div class="frame"><img src="https://images.unsplash.com/photo-1729016723287-30f88a7fc59a?q=80&w=1400&auto=format&fit=crop" alt="Single lipstick glowing against a deep black background in moody still-life light" loading="lazy" /></div>
+            <figcaption>Craft <i>Rouge, №1</i></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials" id="voices" data-theme="light">
+      <div class="container">
+        <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Word of Mouth</p>
+        <h2 class="display" data-reveal="mask">They said it <em>better</em>.</h2>
+        <div class="testimonials-grid">
+          <article class="quote-card" data-reveal="up">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>My trial took three hours because Meher kept adjusting the base until it matched my neck, not my cheek. On the wedding day I cried through the vidaai and the liner did not move.</blockquote>
+            <p class="quote-meta"><b>Shruti Venkatesan</b><span>Bridal client, Dec 2025</span></p>
+          </article>
+          <article class="quote-card" data-reveal="up" data-reveal-delay="0.08">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>I asked for colour that wouldn't need rescuing every six weeks. Eight months on, the balayage has grown out exactly the way they said it would.</blockquote>
+            <p class="quote-meta"><b>Ananya Bhattacharya</b><span>Colour client since 2024</span></p>
+          </article>
+          <article class="quote-card" data-reveal="up" data-reveal-delay="0.16">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>They did my sangeet makeup at four in the afternoon and I danced till two. The photos from the last hour look like the first.</blockquote>
+            <p class="quote-meta"><b>Prerna Malhotra</b><span>Sangeet, Feb 2026</span></p>
+          </article>
+          <article class="quote-card" data-reveal="up">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>I walked in with six weeks to sort my skin before the engagement. The glow plan came with an actual schedule, sitting by sitting, and it held.</blockquote>
+            <p class="quote-meta"><b>Kavya Iyer</b><span>Pre-bridal skin plan, 2025</span></p>
+          </article>
+          <article class="quote-card" data-reveal="up" data-reveal-delay="0.08">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>First salon where someone asked how many minutes I give my hair on a weekday before picking up scissors. The cut dries into shape on its own.</blockquote>
+            <p class="quote-meta"><b>Ritika Sabharwal</b><span>Cut &amp; colour client</span></p>
+          </article>
+          <article class="quote-card" data-reveal="up" data-reveal-delay="0.16">
+            <span class="quote-stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <blockquote>They readied my daughter, my mother and me in one morning without a single raised voice. The pinning survived an outdoor December wedding and a very long reception line.</blockquote>
+            <p class="quote-meta"><b>Deepa Krishnan</b><span>Mother of the bride, Dec 2025</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOUNDER ================= -->
+    <section class="founder" id="founder" data-theme="light">
+      <div class="container founder-grid">
+        <div class="founder-media" data-reveal="fade">
+          <figure class="arch arch--ornate">
+            <img src="https://images.unsplash.com/photo-1774437890454-634d48db52c8?q=80&w=1400&auto=format&fit=crop" alt="Warm portrait of a smiling Indian woman in a red and purple saree" loading="lazy" />
+          </figure>
+        </div>
+        <div class="founder-body">
+          <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> The Founder</p>
+          <h2 class="display" data-reveal="mask">The hands <em>behind</em> it.</h2>
+          <p data-reveal="up">I started in 2014, pinning hair backstage at fashion week for artists who never learned my name. Twelve years later I have keyed shows of my own, styled over four hundred brides, and learned the one thing no academy taught me: a face tells you what it needs, if you slow down enough to look.</p>
+          <p data-reveal="up" data-reveal-delay="0.1">VELOURA is the salon I always wanted to sit in. Fewer chairs, longer appointments, artists I trained myself. If you leave looking like someone else, I have failed. You should leave looking like you, on your best morning.</p>
+          <p class="founder-sign" data-reveal="up" data-reveal-delay="0.2"><b>Meher Kapadia</b><span>Founder &amp; Creative Director</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq-section" id="faq" data-theme="light">
+      <div class="container faq">
+        <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> Good to Know</p>
+        <h2 class="display" data-reveal="mask">Asked, <em>answered</em>.</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How do I book an appointment? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">Everything runs on WhatsApp. Message us with your service and preferred day, and we confirm your slot and your artist's name within the hour during opening hours. No app, no login, no hold music.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer bridal trials? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">Yes, and we insist on them for The Veloura Bride and The Trousseau. A trial takes about two hours, two to three weeks before the wedding. You leave with photographs of the look and a written plan for the day.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you travel for weddings? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">For bridal bookings, yes. We come to your venue or home anywhere in Mumbai at no extra charge; outstation weddings are quoted with travel and stay. All other services are in-atelier only.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which products do you use? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">Professional lines only, chosen for Indian skin and Indian weather. Colour work is ammonia-free, and bridal kits are built on long-wear, camera-tested bases. Tell us about sensitivities when you book and we patch-test first.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is your cancellation policy? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">Reschedule or cancel free of charge up to 24 hours before your slot, right there on WhatsApp. Inside 24 hours, we charge half the service value. Bridal advances transfer to a new date but are not refundable.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What are your timings? <span class="faq-x" aria-hidden="true"></span></summary>
+            <p class="faq-a">Tuesday to Friday, 10 am to 8 pm. Weekends run 9 am to 9 pm and fill about ten days out. We close on Mondays so the team rests and the atelier gets a proper reset.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA + FOOTER ================= -->
+    <section class="contact" id="contact" data-theme="dark">
+      <div class="container final-cta">
+        <svg class="lotus-divider" style="width:5.5rem;color:var(--champagne)" aria-hidden="true"><use href="#i-lotus"/></svg>
+        <h2 class="display" data-reveal="mask">The chair is <em>ready</em>.</h2>
+        <p class="lede" data-reveal="up">Appointments open ten days ahead, and weekends go first. Tell us what you need and we take it from there.</p>
+        <a class="btn btn--primary" data-wa="general" href="https://wa.me/918308936941" data-reveal="up" data-reveal-delay="0.15">
+          <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Book on WhatsApp
+        </a>
+        <a class="link-draw" data-wa="general" href="https://wa.me/918308936941">+91 83089 36941</a>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <p class="footer-brand">VELOURA</p>
+              <p class="footer-tagline">Considered beauty, by appointment.</p>
+            </div>
+            <div>
+              <h4>Visit</h4>
+              <ul>
+                <li>Second Floor, Casa Serena</li>
+                <li>41 Linking Road, Bandra West</li>
+                <li>Mumbai 400050</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <ul>
+                <li>Tue – Fri · 10 am – 8 pm</li>
+                <li>Sat – Sun · 9 am – 9 pm</li>
+                <li>Monday · Closed</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Reach us</h4>
+              <ul>
+                <li><a data-wa="general" href="https://wa.me/918308936941">WhatsApp · +91 83089 36941</a></li>
+                <li><a href="https://instagram.com/veloura.atelier" target="_blank" rel="noopener">Instagram · @veloura.atelier</a></li>
+                <li><a href="mailto:hello@veloura.in">hello@veloura.in</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-base">
+            <span>© 2026 VELOURA · The Beauty Atelier</span>
+            <span>Bandra West, Mumbai</span>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- offer popup -->
+  <dialog class="offer" id="offer" aria-labelledby="offer-title">
+    <div class="offer-panel">
+      <div class="offer-card">
+        <svg class="offer-corner offer-corner--tl" aria-hidden="true"><use href="#i-corner"/></svg>
+        <svg class="offer-corner offer-corner--tr" aria-hidden="true"><use href="#i-corner"/></svg>
+        <svg class="offer-corner offer-corner--bl" aria-hidden="true"><use href="#i-corner"/></svg>
+        <svg class="offer-corner offer-corner--br" aria-hidden="true"><use href="#i-corner"/></svg>
+        <p class="eyebrow"><svg class="sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg> A welcome, from us</p>
+        <h2 id="offer-title">Twenty percent, <em>on&nbsp;us</em>.</h2>
+        <p>A quiet thank-you for trying a new chair. Valid on your first appointment at the atelier.</p>
+        <a class="btn btn--primary" data-wa="offer" href="https://wa.me/918308936941">
+          <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Claim on WhatsApp
+        </a>
+        <button class="offer-dismiss" data-offer-close>Perhaps another time</button>
+        <p class="offer-fineprint">First visit only. Services above ₹1,500. Not valid on bridal packages.</p>
+      </div>
+      <button class="offer-close" data-offer-close aria-label="Close">✕</button>
+    </div>
+  </dialog>
+
+  <!-- floating WhatsApp -->
+  <a class="wa-float" data-wa="general" href="https://wa.me/918308936941" aria-label="Chat on WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- mobile book bar -->
+  <div class="book-bar">
+    <a class="bar-menu" href="#services">₹ Price menu</a>
+    <a class="bar-book" data-wa="general" href="https://wa.me/918308936941">
+      <svg class="wa-icon" aria-hidden="true"><use href="#i-wa"/></svg>
+      Book now
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" integrity="sha384-wl5TeDVvOWt30Pbf8aSo2ZrzsOjddu3avOBvHe+p+OhJt9gP6w9YXmDkN5DK2/dF" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js" integrity="sha384-SWJ0lLVRoipvHh59xj0pL7uC7Ih51F+5smaFtrG+2nr+TlDZU5SYJHmxfolbeNTr" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" integrity="sha384-ClD7pCgIUz5M81HT8aZmMxCsWmfsycmBiwL5gy1pUbdWHvICIbea22N9sTtAFotA" crossorigin="anonymous" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
